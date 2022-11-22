@@ -11,3 +11,5 @@ mkdir si
 mv si.txt si
 6)
 cat Alumnos.txt | awk '{print $1,$2,$5}' | sed 's/ /-/2'
+7)
+grep -c González Alumnos.txt
