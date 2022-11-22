@@ -5,3 +5,7 @@ mkdir examen
 cd examen
 3)
 grep -n SI Alumnos.txt > si.txt
+4) 
+mkdir si
+5)
+mv si.txt si
