@@ -13,3 +13,5 @@ mv si.txt si
 cat Alumnos.txt | awk '{print $1,$2,$5}' | sed 's/ /-/2'
 7)
 grep -c González Alumnos.txt
+8)
+cat Alumnos.txt | sed 's/Vicente/Pepe/g'
