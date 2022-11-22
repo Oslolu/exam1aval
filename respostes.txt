@@ -19,3 +19,5 @@ cat Alumnos.txt | sed 's/Vicente/Pepe/g'
 cat Alumnos.txt | awk '{if($4 >= 2010 && $4 <= 2019)print($1,$2,$3,$4,$5)}'
 10)
 cat Alumnos.txt | grep '^J.*' | awk '{print($1,$2)}' | uniq
+11)
+cat du.txt | awk '{if($1 >= 1M && $1 <= 100M)print($2)}' | sort -nr
