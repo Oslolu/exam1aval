@@ -15,3 +15,5 @@ cat Alumnos.txt | awk '{print $1,$2,$5}' | sed 's/ /-/2'
 grep -c González Alumnos.txt
 8)
 cat Alumnos.txt | sed 's/Vicente/Pepe/g'
+9)
+cat Alumnos.txt | awk '{if($4 >= 2010 && $4 <= 2019)print($1,$2,$3,$4,$5)}'
