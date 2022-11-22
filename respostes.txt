@@ -17,3 +17,5 @@ grep -c González Alumnos.txt
 cat Alumnos.txt | sed 's/Vicente/Pepe/g'
 9)
 cat Alumnos.txt | awk '{if($4 >= 2010 && $4 <= 2019)print($1,$2,$3,$4,$5)}'
+10)
+cat Alumnos.txt | grep '^J.*' | awk '{print($1,$2)}' | uniq
