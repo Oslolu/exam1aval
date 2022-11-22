@@ -9,3 +9,5 @@ grep -n SI Alumnos.txt > si.txt
 mkdir si
 5)
 mv si.txt si
+6)
+cat Alumnos.txt | awk '{print $1,$2,$5}' | sed 's/ /-/2'
